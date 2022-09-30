@@ -28,7 +28,7 @@ var app = new Vue({
                 alert ("Ingrese el nombre y promedio del estudiante");
             }
         },
-        verificarDni:function(){
+        verificarCampos:function(){
             //console.log(this.dni.length);
             //console.log(this.show_contact_form);
             if (this.dni==""){
@@ -43,14 +43,23 @@ var app = new Vue({
             }
         },
         enviarDenuncia:function(){
+            this.verificarCampos();
             alert ("Tu denuncia se registró correctamente");
-            this.show_contact_form=0;
-            this.dni="";
+            this.limpiarCampos();
         },
         cancelarDenuncia:function(){
             alert ("Denuncia cancelada!");
-            this.show_contact_form=0;
-            this.dni="";
+            this.limpiarCampos();
+        },
+        limpiarCampos:function(){
+            let me = this;
+            me.dni="";
+            me.show_contact_form=0;
+            me.nombre="";
+            me.apellidos="";
+            me.email="";
+            me.celular="";
+            me.mensaje="";
         }
     }
 })

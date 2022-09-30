@@ -129,13 +129,12 @@
                     <div class="col-md-6 col-xs-12">
                         <h2 class="text-center">Indentifícate</h2>
                         <div class="form-floating mb-3">
-                            <input type="text" maxlength="8" class="form-control" v-model="dni">
-                            <label>DNI</label>
+                            <input type="tel" maxlength="8" class="form-control" v-model="dni">
+                            <label>DNI<span style="color:red;" v-show="dni==''"> (*Ingrese)</span></label>
                         </div>
-                        <input type="button" value="Siguiente >" class="btn btn-success" v-on:click="verificarDni">
                     </div>
 
-                    <div v-if="show_contact_form" class="col-md-6 col-xs-12">
+                    <div v-show="dni.length == 8" class="col-md-6 col-xs-12">
                         <h2 class="text-center">Denunciando</h2>
                         <form id="contactForm" >
                             <!-- Name input-->
