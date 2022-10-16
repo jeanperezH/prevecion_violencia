@@ -9,30 +9,33 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            
-            <div class="container px-5">
-                
-                <a class="navbar-brand" href="#!"><img src="imgs/logopnp.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active text-pnp-color" href="#!">Institucional</a></li>
-                        <li class="nav-item"><a class="nav-link active text-pnp-color" href="#!">Servicio al ciudadano</a></li>
-                        <li class="nav-item"><a class="nav-link active text-pnp-color" href="#!">Denunciar</a></li>
-                        <li class="nav-item"><a class="nav-link active text-pnp-color" href="#!">Organización</a></li>
-                    </ul>
+        <div class="staticnav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="#!"><img src="imgs/logopnp.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active text-pnp-color" href="#">Institucional</a></li>
+                            <li class="nav-item"><a class="nav-link active text-pnp-color" onclick="openLey30364()" href="#!">Ley N° 30364</a></li>
+                            <li class="nav-item"><a class="nav-link active text-pnp-color" href="#!">Denunciar</a></li>
+                            <li class="nav-item"><a class="nav-link active text-pnp-color" onclick="openOrganizacion()" href="#!">Organización</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><input type="search"></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><input type="search"></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+        
         <!-- Header-->
         <header class="bg-dark py-5">
             <div class="container px-5">
+                <h1></h1><br><br>
                 <h1 class="display-5 fw-bolder text-white mb-2 text-center">COMISARÍA PNP DE CHILCA</h1>
                 <h3 class="display-10 fw-bolder text-warning mb-2 text-center">¡Paremos la violencia contra las mujeres!</h3>
                 <div class="row gx-5 justify-content-center">
@@ -73,41 +76,57 @@
             <div class="container px-5 my-5">
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection">1</i></div>
+                        
                         <h2 class="h4 fw-bolder">¿Qué es violencia familiar?</h2>
-                        <p class="card">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a class="text-decoration-none" href="#!">
-                            Call to action
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                        <p class="card">
+                            <video src="videos/que es violencia.mp4" width="100%" height="auto" controls></video>
+                        </p>
                     </div>
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building">2</i></div>
-                        <h2 class="h4 fw-bolder">¿Cómo identificar la violencia familiar?</h2>
-                        <p class="card">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a class="text-decoration-none" href="#!">
-                            Call to action
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                        <h2 class="h4 fw-bolder">¿Cuál es el principal motivo de que las víctimas de violencia de género no denuncien?</h2>
+                        <p class="card">
+                            <img src="imgs/motivo de no denuncia.jpeg" alt="">
+                        </p>
+                        <a class="text-decoration-none" href="imgs/motivo de no denuncia.jpeg" target="_blank">Ver</a>
                     </div>
                     <div class="col-lg-4">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2">3</i></div>
-                        <h2 class="h4 fw-bolder">¿Qué acciones tomar si se detecta violencia familiar?</h2>
-                        <p class="card">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a class="text-decoration-none" href="#!">
-                            Call to action
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                        <h2 class="h4 fw-bolder">Medidas de protección</h2>
+                        <p class="card">
+                            <iframe src="docs/MEDIDAS DE PROTECCIÓN.pdf" width="100%" height="200px"></iframe>
+                        </p>
+                        <a class="text-decoration-none" href="docs/MEDIDAS DE PROTECCIÓN.pdf" target="_blank">Descargar</a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Docuemnt Ley-->
+        <section class="bg-dark py-5">
+            <div id="div-ley30364" class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder text-pnp-color">Ley N° 30364</h2>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <iframe src="docs/LEY Nº 30364 - LEY PARA PREVENIR, SANCIONAR Y ERRADICAR LA VIOLENCIA CONTRA LAS MUJERES Y LOS INTEGRANTES DEL GRUPO FAMILIAR.pdf" width="100%" height="500px"></iframe>
+                </div>
+                                
+            </div>
+        </section>
+        <section class="py-5 border-bottom">
+            <div id="div-organizacion" class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Organización</h2>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <iframe src="docs/ORGANIGRAMA DE LA CPNP CHILCA 2022.pdf" width="100%" height="500px"></iframe>
+                </div>
+                                
             </div>
         </section>
         <!-- Video section-->
         <section class="bg-dark py-5">
             <div class="container px-5 my-5 px-5">
                 <div class="text-center mb-5">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope">1</i></div>
-                    <h2 class="fw-bolder">Video de prevención</h2>
+                    <h2 class="fw-bolder text-pnp-color">Video de prevención</h2>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-md-6 col-xs-12">
@@ -127,80 +146,107 @@
                                 
             </div>
         </section>
-        
         <!-- Contact - Denuncia section-->
         <section id="app" class="bg-light py-5">
-            <div class="container px-5 my-5 px-5">
-                <div class="text-center mb-5">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope">3</i></div>
-                    <h2 class="fw-bolder">Denuncia si detectas violencia</h2>
-                    <p class="lead mb-0">Estamos para atenderte las 24 horas</p>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-md-6 col-xs-12">
-                        <h2 class="text-center">Indentifícate</h2>
-                        <div class="form-floating mb-3">
-                            <input type="tel" maxlength="8" class="form-control" v-model="dni">
-                            <label>DNI<span style="color:red;" v-show="dni==''"> (*Ingrese)</span></label>
+            <div id="div-denunciar">
+                <div class="container px-5 my-5 px-5">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bolder">Denuncia si detectas violencia</h2>
+                        <p class="lead mb-0">Estamos para atenderte las 24 horas</p>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-md-6 col-xs-12">
+                            <h2 class="text-center">Indentifícate</h2>
+                            <div class="form-floating mb-3">
+                                <input type="tel" maxlength="8" class="form-control" v-model="dni">
+                                <label>DNI<span style="color:red;" v-show="dni==''"> (*Ingrese)</span></label>
+                            </div>
                         </div>
-                    </div>
-
-                    <div v-show="dni.length == 8" class="col-md-6 col-xs-12">
-                        <h2 class="text-center">Denunciando</h2>
-                        <form id="contactForm" >
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" v-model="nombre" type="text" />
-                                <label>Nombre</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" v-model="apellidos" type="text" />
-                                <label>Apellidos</label>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" v-model="email" type="email"/>
-                                <label>Correo</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" v-model="celular" type="tel"/>
-                                <label>Celular</label>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" v-model="mensaje" type="text" style="height: 10rem"></textarea>
-                                <label>Detalles de la denuncia</label>
-                            </div>
-                            <!-- Submit Button-->
-                            <div class="row gx-5 justify-content-center">
-                                <div class="col-md-3 col-xs-12">
-                                    <button class="btn btn-success" v-on:click="enviarDenuncia" type="submit">Denunciar</button>
+    
+                        <div v-show="dni.length == 8" class="col-md-6 col-xs-12">
+                            <h2 class="text-center">Denunciando</h2>
+                            <form id="contactForm" >
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" v-model="nombre" type="text" />
+                                    <label>Nombre</label>
                                 </div>
-                                <div class="col-md-3 col-xs-12">
-                                    <button class="btn btn-danger" v-on:click="cancelarDenuncia" type="submit">Cancelar</button>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" v-model="apellidos" type="text" />
+                                    <label>Apellidos</label>
                                 </div>
-                            </div>
-                        </form>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" v-model="email" type="email"/>
+                                    <label>Correo</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" v-model="celular" type="tel"/>
+                                    <label>Celular</label>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" v-model="mensaje" type="text" style="height: 10rem"></textarea>
+                                    <label>Detalles de la denuncia</label>
+                                </div>
+                                <!-- Submit Button-->
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-md-3 col-xs-12">
+                                        <button class="btn btn-success" v-on:click="enviarDenuncia" type="submit">Denunciar</button>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12">
+                                        <button class="btn btn-danger" v-on:click="cancelarDenuncia" type="submit">Cancelar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
                     </div>
-                    
                 </div>
+            </div>
+        </section>
+        <!-- Maps section-->
+        <section class="bg-dark py-5">
+            <center><h1 class="fw-bolder text-pnp-color">Ubícanos</h1></center>
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.460746473707!2d-75.21005348255616!3d-12.080578099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9656703ffc75%3A0x9675e9e1ac756048!2sComisaria%20Chilca!5e0!3m2!1ses-419!2spe!4v1665937900639!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-5">
-                <p class="m-0 text-center text-white">Contactanos: Comisaría de Chilca</p>
-                <p class="m-0 text-white">Direccion: Av. Real 21133 </p>
-                <p class="m-0 text-white">Teléfono: 12312312</p>
-                <p class="m-0 text-white">Correo: </p>
+            <h4 class="m-0 text-center text-pnp-color">Contactanos: Comisaría de Chilca</h4>
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <div class="container px-5">
+                        <h1></h1>
+                        <p class="m-0 text-white">Direccion: Psje. San Andrés N° 189 </p>
+                        <p class="m-0 text-white">Teléfono: (064)200225</p>
+                        <p class="m-0 text-white">Correo: com.chilca@policia.gob.pe</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <h1></h1>
+                    <img src="imgs/rompe_el_silencio.jpeg" width="30%" height="auto">
+                </div>
             </div>
+            
         </footer>
         <!-- Bootstrap core JS-->
         <script src="js/bootstrap.js"></script>
         <script src="js/vue.js"></script>
         <script src="js/principal.js"></script>
+        <script>
+            function openLey30364(){
+                var scrollDiv = document.getElementById("div-ley30364").offsetTop;
+                window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+            }
+            function openOrganizacion(){
+                var scrollDiv = document.getElementById("div-organizacion").offsetTop;
+                window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+            }
+        </script>
     </body>
 </html>

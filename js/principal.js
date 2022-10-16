@@ -60,6 +60,10 @@ var app = new Vue({
             me.email="";
             me.celular="";
             me.mensaje="";
+        },
+        openDeunciar:function(){
+            var scrollDiv = document.getElementById("div-denunciar").offsetTop;
+            window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
         }
     }
 })
