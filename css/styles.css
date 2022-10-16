@@ -3939,6 +3939,13 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+.staticnav{
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 100;
+
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
