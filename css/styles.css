@@ -3939,13 +3939,6 @@ textarea.form-control-lg {
   list-style: none;
 }
 
-.staticnav{
-  position: fixed !important;
-  width: 100% !important;
-  z-index: 100;
-
-}
-
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -4035,13 +4028,15 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
+  width: 100% !important;
+  position: fixed !important;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  z-index: 100 !important;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -7500,6 +7495,11 @@ textarea.form-control-lg {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+}
+
+.py-10{
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
 }
 
 .pt-0 {
